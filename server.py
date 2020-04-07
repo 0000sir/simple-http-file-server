@@ -457,7 +457,7 @@ def main():
                         help="The number of threads to launch")
     args = parser.parse_args()
 
-    setup_and_start_http_server('localhost', args.port, args.access_config,
+    setup_and_start_http_server('0.0.0.0', args.port, args.access_config,
                                 args.log_headers, args.log,
                                 args.should_flush_log, args.threads)
 
