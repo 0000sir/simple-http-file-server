@@ -1,0 +1,9 @@
+version: "2"
+services:
+  http:
+    image: python:3.8-buster
+    command: "/opt/http-server/server.sh"
+    volumes:
+      - ./:/opt/http-server
+    ports:
+      - 8080:80
