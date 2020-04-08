@@ -1,0 +1,12 @@
+{
+    "paths" : [
+        { "path" : "version", "user" : "*", "perms" : "r" },
+        { "path" : "test_project", "user": "test_project", "perms": "rwl"},
+        { "path" : "test_project_release", "user": "test_project", "perms": "r"},
+        { "path" : "version", "user" : "test_project", "perms" : "rw" }
+    ],
+    "users" : [
+        { "user" : "test_project", "psw" : "userpass" },
+        { "user" : "test_project_release", "psw" : "userpass2" }
+    ]
+}
