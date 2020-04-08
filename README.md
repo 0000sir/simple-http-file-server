@@ -24,6 +24,12 @@ Upload file with this command:
 curl -X PUT -T /path/to/your/file -u username:password http://localhost/upload/path
 ```
 
+Download your file with:
+
+```
+curl -O -u username:password http://localhost/upload/path/filename.zip
+```
+
 The server supports serving multiple streams concurrently. This is useful if
 the server will serve many concurrent large streams over slow connection
 
@@ -63,6 +69,14 @@ The following shows full list of accepted command line arguments:
       --log_headers         If set logs headers of all requests
       --log LOG             Path to log file
       --threads THREADS     The number of threads to launch
+
+Run In Docker
+=============
+Config your user and permissions in config/users.json, then run the command:
+
+```
+docker-compose up -d
+```
 
 Permissions
 ===========
