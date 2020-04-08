@@ -18,6 +18,12 @@ the server was started from. Any existing directories are automatically created.
 PUT fails if the given path identifies an existing directory or creating needed
 directories would overwrite an existing file.
 
+Upload file with this command:
+
+```
+curl -X PUT -T /path/to/your/file -u username:password http://localhost/upload/path
+```
+
 The server supports serving multiple streams concurrently. This is useful if
 the server will serve many concurrent large streams over slow connection
 
